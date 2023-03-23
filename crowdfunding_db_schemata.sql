@@ -1,4 +1,4 @@
-﻿CREATE TABLE category (
+CREATE TABLE category (
     category_id CHAR(4) NOT NULL,
     category VARCHAR(12) NOT NULL,
     PRIMARY KEY (category_id)
@@ -24,13 +24,13 @@ CREATE TABLE campaign (
     company_name VARCHAR(33) NOT NULL,
     description VARCHAR(53) NOT NULL,
     goal FLOAT NOT NULL,
-    pledge FLOAT NOT NULL,
+    pledged FLOAT NOT NULL,
     outcome VARCHAR(10) NOT NULL,
-    backers_out INT NOT NULL,
+    backers_count INT NOT NULL,
     country CHAR(2) NOT NULL,
     currency CHAR(3) NOT NULL,
-    launched_date date NOT NULL,
-    end_date date NOT NULL,
+    launched_date DATE NOT NULL,
+    end_date DATE NOT NULL,
     category_id CHAR(4) NOT NULL,
     subcategory_id VARCHAR(8) NOT NULL,
     PRIMARY KEY (cf_id),
